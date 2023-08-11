@@ -3,15 +3,15 @@
 
 ## ScreenShots
 
-# SignIn and SignUp Pages
+### SignIn and SignUp Pages
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/a372c036-ea0a-472c-a14f-2edb7e35b307)
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/4e8b365e-f46e-4119-922d-b77f453e5480)
 
-# HomePage
+### HomePage
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/ba96228f-cebb-4af8-88e0-9cb994b33130)
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/45a2656e-c0e1-48db-acfc-701d944ae84e)
 
-# UsersPage
+### UsersPage
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/cde22dc8-9852-40f0-a965-cbb72a4f4e27)
 ![Screenshot](https://github.com/SalmanIyad/GSG-TT9-Project-Gamers-Website/assets/110406908/7a2eec1d-0aa6-4b94-ab25-56f45e407aed)
 
@@ -120,5 +120,3 @@
 ## Deployment
 
 - [Netlify Deployment](https://gsg-tt9-project-gamers-website.netlify.app/)
-
-
