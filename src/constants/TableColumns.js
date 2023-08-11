@@ -17,7 +17,6 @@ export const TABLE_COLUMNS = (handleDelete, handleEdit) => [
     render: (data) => (
       <div onClick={(e) => e.stopPropagation()}>
         <button onClick={() => handleDelete(data._id)}>delete</button>
-        {/* <button onClick={() => handleEdit(data.id)}>edit</button> */}
       </div>
     ),
   },
