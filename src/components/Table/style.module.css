@@ -1,0 +1,137 @@
+/* .theme {
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  padding: 17px 9px;
+} */
+
+
+
+.table_light {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.22);
+}
+.table_dark {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(169, 169, 169, 0.22);
+}
+
+.table_light thead th {
+  font-weight: 600;
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table_light tbody td {
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #f0f0f0;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table_light,.table_dark tbody tr {
+  font-size: 1.2rem;
+}
+
+.table_light tbody tr:nth-child(even) {
+  background-color: #d8d8d8;
+}
+
+.table_light tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.table_light tbody tr.active-row {
+  font-weight: 600;
+  color: #005dc0;
+}
+
+
+/*  */
+
+.table_dark thead th {
+  font-weight: 600;
+  background-color: rgb(182, 182, 182);
+  border-color: #3f3f3f;
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table_dark tbody td {
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid rgb(227, 227, 227);
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table_dark tbody tr:nth-child(even) {
+  background-color: #747474;
+}
+
+.table_dark tbody tr:hover {
+  background-color: rgba(0, 64, 255, 0.103);
+}
+
+.table_dark tbody tr.active-row {
+  font-weight: 600;
+  color: #005dc0;
+}
+
+.loading_light {
+  color: #000000;
+  margin: 0 auto;
+}
+
+.loading_dark {
+  margin: 0 auto;
+  color: #e0e0e0 !important;
+}
+
+table button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #848484;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+table button:hover {
+  background-color: #373737;
+}
+
+table button:focus {
+  outline: none;
+}
+

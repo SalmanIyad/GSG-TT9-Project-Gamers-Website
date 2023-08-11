@@ -1,0 +1,87 @@
+.users {
+  padding: 2rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  color: #000;
+  overflow: auto;
+}
+
+.users h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 1rem;
+}
+
+.search input {
+  flex: 3;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.search select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination_buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pagination_buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.pagination_buttons button:hover {
+  background-color: #ccc;
+}
+
+.pagination_buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* pageNumContainer */
+
+.pageNumContainer button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d7d7d7;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pageNumContainer button:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.pageNumContainer button:focus {
+  outline: none;
+}

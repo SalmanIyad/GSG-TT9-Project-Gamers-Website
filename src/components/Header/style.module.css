@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  padding: 0.3rem 6rem 0 1rem;
+  gap: 1rem;
+}
+.light {
+  color: #000;
+}
+.dark {
+  color: #fff;
+}
+.profile_name {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile_name h4 {
+  font-family: 'Inter';
+  font-weight: 400;
+}
+.profile_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  padding: 2px 1px;
+}
+.profile_img a {
+  width: 100%;
+  height: 100%;
+}
+.profile_img img {
+  width: 99%;
+  height: 99%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.profile_img:hover {
+  background: linear-gradient(#3e0ad1, #d6250d, #71d30e),
+    lightgray 50% / cover no-repeat;
+}

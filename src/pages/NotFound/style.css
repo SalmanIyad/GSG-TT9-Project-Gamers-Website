@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-code {
+  font-size: 120px;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.error-message {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.back-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

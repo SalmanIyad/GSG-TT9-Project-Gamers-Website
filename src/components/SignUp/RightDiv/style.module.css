@@ -1,0 +1,68 @@
+.container {
+  width: 80%;
+  height: 100vh;
+  background: url('/public/assets/Rectangle_31.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px){
+  .container {
+    display: none;
+  }
+}
+
+.right__div {
+  padding: 4rem;  
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #1565d8;
+}
+.right__div__icon {
+  display: flex;
+}
+.right__div__icon h6 {
+  color: #fff;
+  font-family: 'Raanana', sans-serif;
+  font-weight: 400;
+}
+.right__div__f__image {
+  align-self: center;
+}
+.right__div__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.right__div__text .qout {
+  height: 20px;
+  color: #00daf7;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+}
+.right__div__text p {
+  width: 473px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.right__div__text h4 {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38px;
+  padding-top: 3rem;
+}
+.right__div__image {
+  align-self: flex-end;
+}

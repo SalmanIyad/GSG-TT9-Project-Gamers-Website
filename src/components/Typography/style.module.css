@@ -1,0 +1,36 @@
+.t__h1 {
+  font-size: 72px;
+}
+.t__h2 {
+  font-size: 42px;
+}
+.t__h3 {
+  font-size: 25px;
+}
+.t__h4 {
+  font-size: 23px;
+}
+.t__h5 {
+  font-size: 18px;
+}
+.t__h6 {
+  font-size: 16px;
+}
+.t__body1 {
+  font-size: 20px;
+}
+.t__body2 {
+  font-size: 14px;
+}
+.t__span {
+  font-size: 14px;
+}
+.t__caption {
+  font-size: 12px;
+}
+.light {
+  color: #000;
+}
+.dark {
+  color: #fff;
+}

@@ -1,0 +1,19 @@
+.or__serprate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.or__serprate span {
+  width: 25%;
+  height: 1px;
+  background: #f5f5f5;
+}
+.or__serprate .or__text {
+  font-size: 12px;
+  color: #bababa;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
