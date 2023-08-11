@@ -9,6 +9,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useNavigate } from 'react-router-dom';
 import { PATHS } from '../../../router/pathes';
 import { useAuthContext } from '../../../context/AuthContext';
+import OrSeprator from "../../OrSeprator";
 
 const inputs = [
   {
@@ -126,6 +127,15 @@ const LeftDiv = () => {
               {isLoading ? 'loading..' : 'Register'}  
             </button>
           </form>
+          <OrSeprator/>
+        <button 
+          className={styles.login_button}
+          onClick={() => {
+            navigate(PATHS.LOGIN);
+          }}
+        >
+          login
+        </button>
         </div>
       </Container>
     </div>
