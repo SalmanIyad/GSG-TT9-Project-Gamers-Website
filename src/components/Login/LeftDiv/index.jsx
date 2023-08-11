@@ -27,7 +27,7 @@ const inputs = [
     id: 'password',
     type: 'password',
     label: 'Enter your password',
-    placeholder: '*******',
+    placeholder: 'Enter your password'
   },
 ];
 
@@ -121,8 +121,8 @@ const LeftDiv = () => {
                   {showPassword ? (
                     <svg
                       onClick={handleShowPassword}
-                      stroke='currentColor'
-                      fill='currentColor'
+                      stroke='gray'
+                      fill='gray'
                       strokeWidth='0'
                       viewBox='0 0 24 24'
                       height='2rem'
@@ -146,7 +146,7 @@ const LeftDiv = () => {
             )
           )}
           <button type='submit' className={styles.form__submit}>
-            {isLoading ? 'loading...' : 'submit'}
+            {isLoading ? 'loading...' : 'Login'}
           </button>
         </form>
         <div className={styles.register}>

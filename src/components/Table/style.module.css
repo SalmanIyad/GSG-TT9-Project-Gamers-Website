@@ -36,6 +36,7 @@
 
 .table_light thead th {
   font-weight: 600;
+  font-size: 1.2rem;
   background-color: #dcdcdc;
   border-color: #dcdcdc;
   padding: 10px 15px;
@@ -75,6 +76,7 @@
 
 .table_dark thead th {
   font-weight: 600;
+  font-size: 1.2rem;
   background-color: rgb(182, 182, 182);
   border-color: #3f3f3f;
   padding: 10px 15px;
