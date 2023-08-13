@@ -120,3 +120,5 @@
 ## Deployment
 
 - [Netlify Deployment](https://gsg-tt9-project-gamers-website.netlify.app/)
+
+- [Vercel Deployment](https://gsg-tt-9-project-gamers-website.vercel.app/)
