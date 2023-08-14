@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 100vw;
-  padding: 0.3rem 6rem 0 1rem;
+  padding: 1rem 6rem 0 1rem; 
   gap: 1rem;
 }
 .light {
@@ -29,15 +29,7 @@
   width: 4rem;
   height: 4rem;
   border-radius: 1.5rem;
-  -webkit-border-radius: 1.5rem;
-  -moz-border-radius: 1.5rem;
-  -ms-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
   transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
   padding: 2px 1px;
 }
 .profile_img a {
@@ -49,10 +41,7 @@
   height: 99%;
   object-fit: cover;
   border-radius: 1.5rem;
-  -webkit-border-radius: 1.5rem;
-  -moz-border-radius: 1.5rem;
-  -ms-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
+  transition: all 0.3s;
 }
 .profile_img:hover {
   background: linear-gradient(#3e0ad1, #d6250d, #71d30e),
