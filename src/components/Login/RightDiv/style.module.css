@@ -1,10 +1,11 @@
 .right__div {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100%;
+  margin: 0 auto;
+
 }
 .right__div__icon {
   display: flex;
@@ -46,19 +47,22 @@
 }
 .right__div__image {
   position: absolute;
-  transform: translate(25rem, 13rem);
-  -webkit-transform: translate(25rem, 13rem);
-  -moz-transform: translate(25rem, 13rem);
-  -ms-transform: translate(25rem, 13rem);
-  -o-transform: translate(25rem, 13rem);
+  transform: translate(22rem, 13rem) scale(0.95);
 }
 @media screen and (max-width: 1300px){
   .right__div__image {
     display: none;
   }
 }
-@media screen and (max-width: 900px){
+
+/* @media screen and (max-width: 900px){
   .right__div {
     display: none;
+  }
+} */
+
+@media screen and (max-width: 900px){
+  .right__div {
+    margin: 4rem auto;
   }
 }

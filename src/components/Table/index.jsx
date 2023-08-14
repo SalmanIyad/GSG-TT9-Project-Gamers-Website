@@ -12,6 +12,7 @@ const Table = ({ isLoading, columns, data, onRowClick = () => {} }) => {
   const loadingClassName = `${
     theme === THEMES.LIGHT ? styles.loading_dark : styles.loading_light
   }`;
+    
 
 
   return (
@@ -47,8 +48,7 @@ const Table = ({ isLoading, columns, data, onRowClick = () => {} }) => {
           </tbody>
         )}
       </table>
-
-      {isLoading && <h1 className={loadingClassName}>Loading...</h1>}
+      {isLoading && <h1 className={loadingClassName}>Loading Data...</h1>}
     </>
   );
 };

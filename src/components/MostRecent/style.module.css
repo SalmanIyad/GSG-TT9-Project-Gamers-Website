@@ -4,7 +4,7 @@
   gap: 0.5rem;
 }
 .trophy h3 {
-  font-family: 'Gilroy';
+  font-family: 'Inter', sans-serif;;
   font-weight: 500;
 }
 .trophy_img {
@@ -47,13 +47,13 @@
 }
 .text h4 {
   color: #fff;
-  font-family: 'Gilroy';
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
 .text p {
   color: #fff;
-  font-family: 'Gilroy';
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }

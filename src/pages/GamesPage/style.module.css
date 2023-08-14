@@ -2,6 +2,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .light {
   background: #fff;
@@ -24,11 +25,7 @@
 }
 .line_light {
   background: #fff;
-  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  -webkit-border-radius: 38px;
-  -moz-border-radius: 38px;
-  -ms-border-radius: 38px;
-  -o-border-radius: 38px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;  
 }
 .line_dark {
   background: #222;

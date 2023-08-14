@@ -1,5 +1,6 @@
 .left__div {
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,14 +41,16 @@
   flex-direction: column;
   width: 70%;
 }
+
 @media screen and (max-width: 900px){
   .left__div {
-    margin: 12rem auto;
+    margin: 4rem auto;
   }
   .Wrapped__form__group {
-    width: 100%;
+    width: 80%;
   }
 }
+
 .form__group {
   display: flex;
   flex-direction: column;
@@ -62,6 +65,7 @@ label h6 {
 input {
   padding: 1rem;
   border-radius: 6px;
+  font-size: 1rem;  
   border: 1px solid #8692a6;
   outline: none;
   width: 100%;
@@ -76,7 +80,6 @@ input::placeholder {
 .form__input__password {
   display: flex;
   flex-direction: column;
-
   position: relative;
   width: 100%;
   display: flex;
@@ -95,7 +98,7 @@ input::placeholder {
   position: absolute;
   right: 1rem;
   top: 55%;
-  transform: scale(1.1, 1.15);
+  transform: scale(1.1, 1.25);
   cursor: pointer;
 }
 .form__submit {

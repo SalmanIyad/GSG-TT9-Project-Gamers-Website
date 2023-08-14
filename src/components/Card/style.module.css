@@ -1,5 +1,6 @@
 .card {
   width: 500px;
+  min-width: 500px;
   height: 100%;
   position: relative;
 }
@@ -98,7 +99,7 @@
 .card_text h5 {
   color: #fff;
   text-align: right;
-  font-family: 'Gilroy';
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
 .card:hover .hero_spider {
