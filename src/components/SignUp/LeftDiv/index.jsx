@@ -1,67 +1,68 @@
-import React from 'react';
-import * as yup from 'yup';
-import styles from './style.module.css';
-import Container from '../../Container';
-import Image from '../../Image';
-import { Typography } from '../../Typography';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useNavigate } from 'react-router-dom';
-import { PATHS } from '../../../router/pathes';
-import { useAuthContext } from '../../../context/AuthContext';
+import React from "react";
+import * as yup from "yup";
+import styles from "./style.module.css";
+import Container from "../../Container";
+import Image from "../../Image";
+import { Typography } from "../../Typography";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate } from "react-router-dom";
+import { PATHS } from "../../../router/pathes";
+import { useAuthContext } from "../../../context/AuthContext";
 import OrSeprator from "../../OrSeprator";
 
 const inputs = [
   {
-    name: 'username',
-    id: 'username',
-    type: 'text',
-    label: 'Username*',
-    placeholder: 'Enter username',
+    name: "username",
+    id: "username",
+    type: "text",
+    label: "Username*",
+    placeholder: "Enter username",
   },
   {
-    name: 'email',
-    id: 'email',
-    type: 'email',
-    label: 'Email address*',
-    placeholder: 'Enter email address',
+    name: "email",
+    id: "email",
+    type: "email",
+    label: "Email address*",
+    placeholder: "Enter email address",
   },
   {
-    name: 'password',
-    id: 'password',
-    type: 'password',
-    label: 'Password*',
-    placeholder: 'password',
+    name: "password",
+    id: "password",
+    type: "password",
+    label: "Password*",
+    placeholder: "password",
   },
   {
-    name: 'rPassword',
-    id: 'rPassword',
-    type: 'password',
-    label: 'Repeat password*',
-    placeholder: 'Repeat password',
+    name: "rPassword",
+    id: "rPassword",
+    type: "password",
+    label: "Repeat password*",
+    placeholder: "Repeat password",
   },
 ];
 
 const schema = yup.object().shape({
-  username: yup.string().required('Username is required'),
+  username: yup.string().required("Username is required"),
   email: yup
     .string()
-    .required('Email is required')
-    .email('Invalid email address'),
+    .required("Email is required")
+    .email("Invalid email address"),
   password: yup
     .string()
-    .required('Password is required')
-    .min(5, 'Password must be at least 8 characters long')
+    .required("Password is required")
+    .min(5, "Password must be at least 8 characters long")
     .matches(
-      RegExp('(.*[a-z].*)'),
-      'Password must contain at least one Lowercase letter'
+      RegExp("(.*[a-z].*)"),
+      "Password must contain at least one Lowercase letter"
     )
-    .matches(RegExp('(.*\\d.*)'), 'Password must contain at least one Number ')
-    ,
+    .matches(RegExp("(.*\\d.*)"), "Password must contain at least one Number "),
   rPassword: yup
     .string()
-    .required('Repeat password is required')
-    .oneOf([yup.ref('password'), null], 'Passwords must match'),
+    .required("Repeat password is required")
+    .oneOf([yup.ref("password"), null], "Passwords must match"),
+  terms: yup.boolean().oneOf([true], 'You must agree to the terms and conditions'),
+  
 });
 
 const LeftDiv = () => {
@@ -89,15 +90,16 @@ const LeftDiv = () => {
         className={styles.back__btn}
         onClick={() => {
           navigate(PATHS.LOGIN);
-        }}>
-        <Image ImageSrc={'/assets/arrow_back_ios_24px.svg'} />
-        <Typography variant={'h6'}>Back</Typography>
+        }}
+      >
+        <Image ImageSrc={"/assets/arrow_back_ios_24px.svg"} />
+        <Typography variant={"h6"}>Back</Typography>
       </div>
       <Container>
         <div className={styles.leftDiv}>
           <div className={styles.leftDiv__text}>
-            <Typography variant={'h3'}>Register Individual Account!</Typography>
-            <Typography variant={'h5'}>
+            <Typography variant={"h3"}>Register Individual Account!</Typography>
+            <Typography variant={"h5"}>
               For the purpose of gamers regulation, your details are required.
             </Typography>
           </div>
@@ -106,7 +108,7 @@ const LeftDiv = () => {
             {inputs.map((input) => (
               <div key={input.id} className={styles.form__group}>
                 <label htmlFor={input.id} className={styles.form__label}>
-                  <Typography variant={'h6'}>{input.label}</Typography>
+                  <Typography variant={"h6"}>{input.label}</Typography>
                 </label>
                 <input
                   {...register(input.name)}
@@ -123,24 +125,39 @@ const LeftDiv = () => {
                 )}
               </div>
             ))}
-            <button type='submit' className={styles.form__submit}>
-              {isLoading ? 'loading..' : 'Register'}  
+            <div className={styles.form_checkbox}>
+              <label htmlFor='terms'>
+                <input
+                  type='checkbox'
+                  id='terms'
+                  {...register('terms')}
+                />
+                <span className='checkmark'></span>
+                I agree to terms & conditions
+              </label>
+              {errors.terms && (
+                <span className={styles.errors}>
+                  {errors.terms.message}
+                </span>
+              )}
+            </div>
+            <button type="submit" className={styles.form__submit}>
+              {isLoading ? "loading.." : "Register"}
             </button>
           </form>
-          <OrSeprator/>
-        <button 
-          className={styles.login_button}
-          onClick={() => {
-            navigate(PATHS.LOGIN);
-          }}
-        >
-          login
-        </button>
+          <OrSeprator />
+          <button
+            className={styles.login_button}
+            onClick={() => {
+              navigate(PATHS.LOGIN);
+            }}
+          >
+            login
+          </button>
         </div>
       </Container>
     </div>
   );
 };
-
 
 export default LeftDiv;

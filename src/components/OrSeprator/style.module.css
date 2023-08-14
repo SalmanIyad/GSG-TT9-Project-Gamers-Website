@@ -4,12 +4,12 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  margin: 0.3rem auto;
+  margin: 1rem auto 2rem auto;
 }
 .or__serprate span {
   width: 25%;
   height: 1px;
-  background: #b5b5b5;
+  background: #d5d5d5;
 }
 .or__serprate .or__text {
   font-size: 12px;

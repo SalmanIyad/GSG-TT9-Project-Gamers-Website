@@ -65,17 +65,18 @@
   max-width: 100%;
   width: 100%;
   height: 4rem;
-  background: #f0f0f0;
+  background: #f1f1f1;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   font-weight: 600;
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
-  color: #000000;
+  color: #1b1b1b;
   border: none;
   padding: 1rem 0;
 }
+
 
 .form {
   width: 100%;
@@ -139,3 +140,44 @@ input::placeholder {
   background-color: rgb(228, 39, 39);
   padding-top: 0.5rem;
 }
+
+.form_checkbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.form_checkbox label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #696f79;
+  gap: 14px;
+  font-family: 'Inter', sans-serif;
+}
+.form_checkbox label input {
+  visibility: hidden;
+  /* <-- Hide the default checkbox. The rest is to hide and allow tabbing, which display:none prevents */
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.form_checkbox label span {
+  /* <-- Style the artificial checkbox */
+  height: 18px;
+  width: 18px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  display: inline-block;
+}
+
+[type=checkbox]:checked+span {
+  border-radius: 4px;
+  background-image: url('../../../../public/assets/checkbox-span.png');
+  border: none;
+  background-size: 18px 18px;
+  object-fit: contain;
+}
+
