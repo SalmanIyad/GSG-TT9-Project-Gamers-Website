@@ -21,6 +21,9 @@ export const TABLE_COLUMNS = (handleDelete, handleEdit) => [
   {
     key: 'createdAt',
     title: 'Create time',
+    render: (data) => (
+      new Date(data.createdAt).toLocaleString()
+    ),
   },
   { 
     key: 'actions',
