@@ -1,0 +1,70 @@
+/* strong password */
+
+.password_strength {
+    width: 100% !important;
+    min-width: 100% !important;
+    margin: 1rem 0;
+}
+
+.password_strength .backLine {
+    width: 100% !important;
+    min-width: 100% !important;
+    border-radius: 4px;
+    background: #C4C4C4;
+}
+
+.password_strength_meter_very_strong {
+    width: 100% !important;
+    min-width: 100% !important;
+    height: 5px;
+    background-color: rgb(28, 194, 28); 
+    border-radius: 2rem;
+}
+
+.reasons_very_strong {
+    color: rgb(28, 194, 28) !important;
+    font-size: 1rem;
+}
+
+/* strong */
+
+.password_strength_meter_strong {
+    width: 80% !important;
+    height: 5px;
+    background-color: rgb(14, 97, 14);
+    border-radius: 2rem;
+}
+
+.reasons_strong {
+    color: rgb(14, 97, 14) !important;
+    font-size: 1rem;
+}
+
+/* medium */
+
+.password_strength_meter_medium {
+    width: 60% !important;
+    height: 5px;
+    background-color: rgb(218, 146, 14);
+    border-radius: 2rem;
+}
+
+
+.reasons_medium {
+    color: rgb(218, 146, 14) !important;
+    font-size: 1rem;
+}
+
+/* low */
+
+.password_strength_meter_low {
+    width: 40% !important;
+    height: 5px;
+    background-color: rgb(250, 23, 23);
+    border-radius: 2rem;
+}
+
+.reasons_low {
+    color: rgb(250, 23, 23) !important;
+    font-size: 1rem;
+}

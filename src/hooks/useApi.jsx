@@ -30,7 +30,6 @@ const UseApi = (url, config) => {
         config
       );
       dispatch({ type: USERS_ACTIONS.REQUEST_SUCCESS_DELETE, payload: id });
-      console.log('success');
     } catch (error) {
       dispatch({ type: USERS_ACTIONS.REQUEST_FAILURE, payload: error.message });
       console.log(error.message);

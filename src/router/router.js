@@ -11,7 +11,7 @@ import UserGuard from '../components/Guards/UserGaurd';
 import AdminGuard from '../components/Guards/AdminGuard';
 import NotFound from '../pages/NotFound';
 
-export const routes = (role) => [
+const authRoutes = [
   {
     path: PATHS.LOGIN,
     element: (
@@ -28,6 +28,9 @@ export const routes = (role) => [
       </GuestGuard>
     ),
   },
+];
+export const routes = [
+  ...authRoutes,
   {
     path: PATHS.HOME,
     element: (

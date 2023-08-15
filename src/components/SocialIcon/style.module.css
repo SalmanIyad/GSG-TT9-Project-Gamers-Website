@@ -7,9 +7,19 @@
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.492);
 }
 
 .icon img {
   width: 35px;
   height: 28.592px;
+  transition: all 0.3s;
+}
+
+.icon:hover img {
+  transform: scale(1.1);
 }
