@@ -30,7 +30,6 @@ const useAuth = () => {
         AUTH_API + AUTH_API_ENDPOINT.LOGIN,
         body
       );
-      console.log(data);
       dispatch({ type: AUTH_ACTIONS.AUTHORIZE, payload: { user: data } });
     } catch (error) {
       dispatch({ type: AUTH_ACTIONS.SET_ERROR, payload: error.message });
